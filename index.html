@@ -11,17 +11,45 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        @media (max-width: 768px) {
+            .desktop-menu {
+                display: none;
+            }
+        }
+        body a  {
+            color: #193E75 !important;
+            font-weight: bold !important;
+        }
+
+    </style>
 </head>
 <body>
-    <header >
+    <header>
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-                <img src="images/logo.png" alt="Kiamedix Logo" class="img-fluid" style="max-width: 100px;">
-                <h1 style="color:#193E75">KiaMedix.com</h1>
+                <img src="images/logo.png" alt="Kiamedix Logo" class="img-fluid" style="height:120px">
+                <h1 style="color:#193E75;font-family: 'Bebas Neue', serif;font-weight: 400;font-style: normal;font-size: 70px;">KiaMedix</h1>
+                <nav class="desktop-menu">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
-    <section class="">
+    <section id="home" class="">
         <div >
             <div class="position-relative">
                 <img src="images/main.jpg" alt="Healthcare Technology" class="img-fluid" style="width: 100%; max-height: 500px; object-fit: cover;">
@@ -34,7 +62,7 @@
     </section>
 
 
-        <section class="py-5">
+        <section id="mission" class="py-5">
             <div class="container">
                 <h2 class="text-center mb-4">Our Mission</h2>
                 <p class="text-center">At Kiamedix, our mission is to revolutionize healthcare by delivering high-quality medical instruments, advanced laboratory equipment, and reliable biomaterials. We empower medical professionals and researchers with innovative solutions that enhance patient care, improve diagnostics, and foster groundbreaking discoveries in life sciences.</p>
@@ -76,7 +104,7 @@ Choose Kiamedix for trusted clinical materials, expert advice, and unparalleled 
     </section>
 
 
-            <section class="py-5 bg-light">
+            <section id="about" class="py-5 " style="background:#E3F2FB">
                 <div class="container">
                     <h2 class="text-center mb-4">About Us</h2>
                     <p>Kiamedix is a trusted partner in the medical and scientific community, specializing in the supply of state-of-the-art medical devices, laboratory materials, and biomaterials. With years of experience, a customer-focused approach, and a commitment to excellence, we work closely with healthcare providers and laboratories to ensure they have access to the tools they need to succeed.</p>
@@ -84,7 +112,7 @@ Choose Kiamedix for trusted clinical materials, expert advice, and unparalleled 
                 </div>
             </section>
 
-            <section class="py-5">
+            <section id="contact" class="py-5">
                 <div class="container">
                     <h2 class="text-center mb-4">Customer Support</h2>
                     <p>We’re here to assist you every step of the way. Whether you need technical advice, product information, or support with maintenance and repairs, our dedicated customer support team is ready to help. At Kiamedix, we prioritize your satisfaction by providing prompt, professional, and personalized service to ensure your success.</p>
@@ -92,7 +120,7 @@ Choose Kiamedix for trusted clinical materials, expert advice, and unparalleled 
             </section>
 
 
-    <section class="py-5 bg-light">
+    <section class="py-5 " style="background:#E3F2FB">
         <div class="container">
             <h2 class="text-center mb-4">Contact Us</h2>
             <div class="row justify-content-center">
@@ -119,22 +147,29 @@ Choose Kiamedix for trusted clinical materials, expert advice, and unparalleled 
         </div>
     </section>
 
-    <section class="py-5">
+    <section class="py-5 bg-light text-dark" style="background: url('images/w.webp') no-repeat center center; background-size: cover;">
         <div class="container">
             <h2 class="text-center mb-4">Impressum</h2>
-            <address>
-                Kiamedix GmbH<br>
-                Willy-Brandt Str. 24-7, 63450 Hanau, Germany<br>
-                Managing Directors: Dr.ing. Mahdi Kiani<br>
-                <strong>Contact Information:</strong><br>
-                Phone: +4917636308845<br>
-                Email: support@kiamedix.com<br>
-                Further legal information available upon request.
-            </address>
+            <div class="row align-items-center mb-5">
+              <div class="col-md-2"></div>
+              <div class="col-md-4">
+                <!-- <img src="images/logo.png" alt="Kiamedix Logo" class="img-fluid" style="height:120px"> -->
+                <address>
+                  Kiamedix GmbH<br>
+                  Willy-Brandt Str. 24-7, 63450 Hanau, Germany<br>
+                  Managing Directors: Dr.ing. Mahdi Kiani<br>
+                  <strong>Contact Information:</strong><br>
+                  Phone: +4917636308845<br>
+                  Email: support@kiamedix.com<br>
+                  Further legal information available upon request.
+                </address>
+              </div>
+            </div>
+
         </div>
     </section>
 
-    <section class="py-5 bg-light">
+    <section class="py-5 ">
         <div class="container">
             <h2 class="text-center mb-4">Data Protection</h2>
             <p>Your privacy matters to us. At Kiamedix, we handle your personal data with the utmost care and in strict compliance with applicable data protection laws. Our Data Protection Policy explains how we collect, use, and protect your information when you interact with our website and services.</p>
